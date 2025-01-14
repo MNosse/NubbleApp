@@ -1,5 +1,7 @@
 import React, {ReactNode} from 'react';
-import {Box, Icon, Text, TouchableOpacityBox} from '@components';
+import {Box, TouchableOpacityBox} from '../Box/Box';
+import {Icon} from '../Icon/Icon';
+import {Text} from '../Text/Text';
 import {useAppSafeArea, useAppTheme} from '@hooks';
 import {KeyboardAvoidingView, Platform} from 'react-native';
 import {ScrollViewContainer, ViewContainer} from './components/ScreenContainer';
