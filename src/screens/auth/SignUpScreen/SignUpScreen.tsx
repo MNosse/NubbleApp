@@ -14,9 +14,7 @@ import {
 import {useResetNavigationSuccess} from '@hooks';
 import {RootStackParamList} from '@routes';
 
-
 import {signUpSchema, SignUpSchema} from './signUpSchema';
-
 
 type ScreenProps = NativeStackScreenProps<RootStackParamList, 'SignUpScreen'>;
 
@@ -36,6 +34,7 @@ export function SignUpScreen({navigation}: ScreenProps) {
   });
 
   function onSubmit(formValues: SignUpSchema) {
+    console.log(formValues);
     reset({
       description: 'Agora é só fazer login na nossa plataforma',
       icon: {

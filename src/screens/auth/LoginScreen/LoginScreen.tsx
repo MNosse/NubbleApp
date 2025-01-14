@@ -13,9 +13,7 @@ import {
 } from '@components';
 import {RootStackParamList} from '@routes';
 
-
 import {loginSchema, LoginSchema} from './loginSchema';
-
 
 type ScreenProps = NativeStackScreenProps<RootStackParamList, 'LoginScreen'>;
 
@@ -37,7 +35,9 @@ export function LoginScreen({navigation}: ScreenProps) {
     navigation.navigate('SignUpScreen');
   }
 
-  function onSubmit({email, password}: LoginSchema) {}
+  function onSubmit({email, password}: LoginSchema) {
+    console.log(email, password);
+  }
 
   return (
     <Screen>
