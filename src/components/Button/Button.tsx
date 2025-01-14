@@ -1,6 +1,5 @@
 import React from 'react';
-import {Text} from '../Text/Text';
-import {TouchableOpacityBox, TouchableOpacityBoxProps} from '../Box/Box';
+import {Text, TouchableOpacityBox, TouchableOpacityBoxProps} from '@components';
 import {buttonPresets} from './buttonPresets';
 import {ActivityIndicator} from '../ActivityIndicator/ActivityIndicator';
 
@@ -30,8 +29,7 @@ export function Button({
       justifyContent="center"
       paddingHorizontal="s20"
       {...buttonPreset.container}
-      {...touchableOpacityBoxProps}
-    >
+      {...touchableOpacityBoxProps}>
       {loading ? (
         <ActivityIndicator color={buttonPreset.content} />
       ) : (
