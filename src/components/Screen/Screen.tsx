@@ -1,11 +1,16 @@
 import React, {ReactNode} from 'react';
+import {KeyboardAvoidingView, Platform} from 'react-native';
+
+import {useNavigation} from '@react-navigation/native';
+
+import {useAppSafeArea, useAppTheme} from '@hooks';
+
 import {Box, TouchableOpacityBox} from '../Box/Box';
 import {Icon} from '../Icon/Icon';
 import {Text} from '../Text/Text';
-import {useAppSafeArea, useAppTheme} from '@hooks';
-import {KeyboardAvoidingView, Platform} from 'react-native';
+
 import {ScrollViewContainer, ViewContainer} from './components/ScreenContainer';
-import {useNavigation} from '@react-navigation/native';
+
 
 interface ScreenProps {
   canGoBack?: boolean;
